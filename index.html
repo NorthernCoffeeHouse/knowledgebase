@@ -10,6 +10,13 @@
             padding: 0;
             box-sizing: border-box;
         }
+            /* Ryzes font import */
+            @font-face {
+                font-family: 'Ryzes';
+                src: url('frontpage/Ryzes-ax92x.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
@@ -72,12 +79,14 @@
 
         .featured-link {
             /* background: linear-gradient(135deg, #ff6b6b, #ee5a24, #0097e6, #2f3542); */
-            background: url('https://avatars.githubusercontent.com/u/21951949?s=400&u=803d17aed97211a7dd25984f98baa496a9723e21&v=4') center/cover;
-            border-radius: 16px;
-            padding: 20px;
+            background: url('frontpage/samurai.png') center/cover;
+            border-radius: 24px;
+            padding: 0;
+            height: 180px;
             margin-bottom: 20px;
             position: relative;
             overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
             cursor: pointer;
             transition: transform 0.2s ease;
         }
@@ -88,14 +97,21 @@
 
         .featured-content {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-end;
+            height: 100%;
+            padding: 0 0 12px 16px;
         }
 
         .featured-text {
-            color: white;
-            font-weight: 600;
-            font-size: 16px;
+            color: #fff;
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+            font-weight: normal;
+            font-size: 0.5rem;
+            text-shadow: none;
+            text-align: left;
+            letter-spacing: 1px;
         }
 
         .featured-icon {
@@ -175,17 +191,17 @@
     <div class="container">
         <div class="header">
             <div class="profile-image"></div>
-            <h1 class="username">shubham's pain</h1>
+            <h1 class="username">Shubham</h1>
             <p class="bio">Sometimes works with data.<br> 
                 Other times immersed in a game or a book.
             </p>
         </div>
-        <div class="featured-link" onclick="window.open('homepage.html', '_blank')">
+        <div class="featured-link" onclick="window.open('knowledgebase/homepage.html', '_blank')">
             <div class="featured-content">
-                <span class="featured-text">Shubham's KnowledgeBase</span>
-                <div class="featured-icon">
+                <span class="featured-text">@player_decline</span>
+                <!-- <div class="featured-icon">
                     <span class="three-dots">⋯</span>
-                </div>
+                </div> -->
             </div>
         </div>
         
